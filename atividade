@@ -1,0 +1,62 @@
+# atividade
+
+                                      Desenvolvimento de Jogo da Velha em Front-End
+-----------------------------------------------------------------------------------------------------------------------------------------                      
+                                                       Descrição:
+        Neste trabalho em equipe, vocês devem aplicar seus conhecimentos em HTML, CSS e JavaScript
+        para criar um jogo da velha funcional. O jogo deve ser desenvolvido utilizando conceitos de 
+        Programação Orientada a Objetos (POO) em JavaScript, com foco na estruturação do código em 
+        classes como Jogador, Jogo da Velha e Jogada.
+-----------------------------------------------------------------------------------------------------------------------------------------        
+                                                        Requisitos:
+        Tecnologias Permitidas: Utilizem apenas HTML, CSS e JavaScript para o desenvolvimento do jogo.
+        
+        O uso de bibliotecas de  estilização, como Bootstrap ou Materialize, é permitido.
+        
+----------------------------------------------------------------------------------------------------------------------------------------- 
+                                                         Funcionalidades Necessárias:
+       ► O jogo deve ser para dois jogadores, cada um capaz de cadastrar um nome.
+       ► Implementem um tabuleiro 3x3 para o jogo da velha.
+       ► Permitam que os jogadores façam suas jogadas alternadamente.
+       ► Após cada jogo, armazenem o resultado (vitória ou derrota ou empate) e atualizem um ranking no
+         armazenamento local, classificando o histórico de vitórias e derrotas de cada jogador.
+       ► Funcionalidade extra (só deve ser implementada por equipes que fizeram as funcionalidades acima):
+         Permitir 1 jogador jogar contra a 'maquina'
+         
+-----------------------------------------------------------------------------------------------------------------------------------------
+                                                       Interface Gráfica:
+      Desenvolvam uma interface amigável e responsiva para o jogo da velha utilizando CSS.
+      
+      Utilizem estilos e elementos visuais adequados para melhorar a experiência do usuário durante o jogo.
+      
+      O ranking (listagem do histórico) deve aparecer em uma área da tela, ou em paralelo com o jogo, ou em
+      uma nova página.
+      
+----------------------------------------------------------------------------------------------------------------------------------------- 
+                                                        POO em JavaScript:
+      Estruturem o código utilizando conceitos de POO em JavaScript. 
+      Criem classes para representar o jogo, os jogadores e as jogadas.
+      Postem a imagem do diagrama de classes elaborado pela equipe que representa a estrutura de código do jogo da velha.
+-----------------------------------------------------------------------------------------------------------------------------------------
+                                                        Formação de Equipes:
+      ➣As equipes devem ser compostas por 5 integrantes.
+      ➣Cada membro da equipe deve contribuir de forma equitativa para o desenvolvimento do projeto, desde a 
+        implementação do código até a criação da interface gráfica. As participação de cada aluno precisa ser
+        evidenciada pelo Github. 
+
+----------------------------------------------------------------------------------------------------------------------------------------- 
+                                                        Entrega:
+      O trabalho deve ser entregue até a data estabelecida no fórum, porém o código fonte precisa ser entregue no github.
+      Junto com o código-fonte, incluam um breve relatório descrevendo as principais decisões de design, os desafios enco-
+      ntrados durante o desenvolvimento e as soluções adotadas, esse arquivo deve ficar com o nome de REAME.md e deve ficar
+      na raiz do projeto, além disso incluam nome de cada integrante, mais o RA.
+-----------------------------------------------------------------------------------------------------------------------------------------
+                                                        Avaliação:
+      O trabalho será avaliado com base na funcionalidade do jogo, na qualidade do código-fonte, na interface gráfica e na
+      colaboração efetiva entre os membros da equipe. 
+                                              ▪️A nota final será individual▪️ 
+-----------------------------------------------------------------------------------------------------------------------------------------
+                                                        Observações:
+      Qualquer forma de plágio resultará em penalidades.
+      Se surgirem dúvidas durante o desenvolvimento do trabalho, não hesitem em buscar auxílio do professor.
+-----------------------------------------------------------------------------------------------------------------------------------------
