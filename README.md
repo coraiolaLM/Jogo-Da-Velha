@@ -11,13 +11,16 @@
 ### Foi optado por seguir com CSS puro, projeto foi dividido em sections, por se tratar de uma estrutura HTML simples não foram encontrados problemas e dificuldades para formatar e deixar o mesmo responsívo. 
 
 # Desafios e Soluções 
+### [ ] Traalhar no paradgma POO, como foi a primeira vez de todos os membros da equipe trabalhando com um projeto orientado a objeto, tivemos um pouco de dificuldade em organização.
+#### -com calma e comunicação conseguimos nos organizar e entregar o projeto.
+
 ### [ ] Fazer com que o programa não se tornasse confuso com diversas classes no mesmo documento JS sem que o código se estendesse muito. 
 #### -Separamos as classes em documentos separados. 
 
 ### [ ] Deixar o código limpo e bem construído, sucinto, de fácil compreensão e simples. 
 #### -Aprimoramos nossas habilidades para buscar meios de reduzir linhas desnecessárias e deixar o código mais ‘simples’, para compreensão buscamos deixar a sintaxe clara e precisa sobre as ações. 
 
-### [ ] Adicionar Derrotas e empates utilizando o sistema de inverter os jogadores entre eles com o uso do jogadorAtual para as jogadas. 
+### [ ] Adicionar Derrotas utilizando o sistema de inverter os jogadores entre eles com o uso do jogadorAtual para as jogadas. 
 #### -Problema resolvido após poucas análises, reconhecendo como deveríamos armazenar as derrotas e empates. 
 
 ### [ ] localStorage, para salvar as jogadas e movimentos da máquina e resultados sem perda. 
@@ -25,6 +28,9 @@
 
 ### [ ] Criação da máquina, problema em criar uma máquina com dificuldade justa, nosso objetivo se trata de um jogo em que não se é possível ganhar todas as vezes.
 #### -Nossa máquina se tornou mais difícil, ela calcula as posições ocupadas e procura uma posição de possível vitória sempre.
+
+Diagrama de Classe: ![Captura de tela 2024-06-27 222933](https://github.com/coraiolaLM/Jogo-Da-Velha/assets/142634278/3f5872b5-1652-4308-9934-8212fcd525b6)
+
 
 Palheta De Cores:![paleta](https://github.com/coraiolaLM/Jogo-Da-Velha/assets/142634278/4a59efbd-52ef-4bac-8207-1d95313d2443)
 
