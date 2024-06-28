@@ -56,5 +56,65 @@ class JogoDaVelha {
                 }
             })
         })
+
+    iniciarMaquina() {
+        this.jogadorMaquina = true
+        this.reniciarJogo()
     }
+
+    reniciarJogo() {
+        this.jogoFinalizado = false
+        this.jogadorAtual = 'X'
+        this.tabuleiro.reniciar()
+        document.getElementById('resultado').textContent = ''
+        document.getElementById('linha').className = 'linha'
+    }
+
+    realizarJogada(indice) {
+        this.tabuleiro.quadradosAtualizados(indice, this.jogadorAtual)
+        if (this.verificaVitoria()) {
+            this.finalizarJogo(${this.jogadores[this.jogadorAtual].nome} venceu!)
+        } else if (this.tabuleiro.quadradosDisponiveis().length === 0) {
+            this.finalizarJogo('Empate!')
+        } else {
+            this.mudarDeJogador()
+        }
+    }
+
+    jogadaMaquina() {
+        const quadradosDisponiveis = this.tabuleiro.quadradosDisponiveis()
+        const indiceAleatorio = Math.floor(Math.random() * quadradosDisponiveis.length)
+        this.realizarJogada(quadradosDisponiveis[indiceAleatorio])
+    }
+
+    mudarDeJogador() {
+        this.jogadorAtual = this.jogadorAtual === 'X' ? 'O' : 'X'
+    }
+
+    verificaVitoria() {
+        const verificaVitoria = [
+            [0, 1, 2], [3, 4, 5], [6, 7, 8],
+            [0, 3, 6], [1, 4, 7], [2, 5, 8],
+            [0, 4, 8], [2, 4, 6]
+        ]
+        return verificaVitoria.some(condition => 
+            condition.every(indice => this.tabuleiro.quadrado[indice] === this.jogadorAtual)
+        )
+    }
+
+    finalizarJogo(message) {
+        this.jogoFinalizado = true
+        document.getElementById('resultado').textContent = message
+        this.pontuacaoAtualizada()
+    }
+
+    pontuacaoAtualizada() {
+        this.jogadores[this.jogadorAtual].pontuacao++
+        const outroJogador = this.jogadorAtual === 'X' ? 'O' : 'X'
+        this.jogadores[outroJogador].derrotas = (this.jogadores[outroJogador].derrotas || 0) + 1
+    
+        document.getElementById(pontuacaoJog${this.jogadorAtual === 'X' ? 1 : 2}).textContent = this.jogadores[this.jogadorAtual].pontuacao
+        document.getElementById(derrotaJog${this.jogadorAtual === 'O' ? 1 : 2}).textContent = this.jogadores[outroJogador].derrotas
+    
+        this.salvarPontuacoes()}
 }
