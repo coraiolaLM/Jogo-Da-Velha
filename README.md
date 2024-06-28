@@ -6,7 +6,7 @@
 
 # Decisões de estilização
 ### 1.Identificar todas as classes, elementos e ID`s da estrutura e os colocar em odem. 
-### 2.Escolher paleta de cores [Paleta](https://coolors.co/3a015c-4f0147-35012c-290025-11001c) 
+### 2.Escolher [Paleta](https://coolors.co/3a015c-4f0147-35012c-290025-11001c) de cores 
 ### 3.Organizar posições e tamanhos de ícones. 
 ### Foi optado por seguir com CSS puro, projeto foi dividido em sections, por se tratar de uma estrutura HTML simples não foram encontrados problemas e dificuldades para formatar e deixar o mesmo responsívo. 
 
