@@ -118,3 +118,42 @@ class JogoDaVelha {
     
         this.salvarPontuacoes()}
 }
+    salvarPontuacoes() {
+        const pontuacoes = {
+            'X': {
+                nome: this.jogadores['X'].nome,
+                pontuacao: this.jogadores['X'].pontuacao,
+                derrotas: this.jogadores['X'].derrotas || 0
+            },
+            'O': {
+                nome: this.jogadores['O'].nome,
+                pontuacao: this.jogadores['O'].pontuacao,
+                derrotas: this.jogadores['O'].derrotas || 0
+            }
+        }
+        localStorage.setItem('pontuacoesJogoDaVelha', JSON.stringify(pontuacoes))
+        this.atualizarPlacarGeral()
+    }
+    
+    carregarPontuacoes() {
+        const pontuacoes = JSON.parse(localStorage.getItem('pontuacoesJogoDaVelha'))
+        if (pontuacoes) {
+            this.jogadores['X'].nome = pontuacoes['X'].nome
+            this.jogadores['X'].pontuacao = pontuacoes['X'].pontuacao
+            this.jogadores['X'].derrotas = pontuacoes['X'].derrotas || 0
+            document.getElementById('nomeJogador1').textContent = pontuacoes['X'].nome
+            document.getElementById('jogador1').textContent = pontuacoes['X'].nome
+            document.getElementById('pontuacaoJog1').textContent = pontuacoes['X'].pontuacao
+            document.getElementById('derrotaJog1').textContent = pontuacoes['X'].derrotas
+    
+            this.jogadores['O'].nome = pontuacoes['O'].nome
+            this.jogadores['O'].pontuacao = pontuacoes['O'].pontuacao
+            this.jogadores['O'].derrotas = pontuacoes['O'].derrotas || 0
+            document.getElementById('nomeJogador2').textContent = pontuacoes['O'].nome
+            document.getElementById('jogador2').textContent = pontuacoes['O'].nome
+            document.getElementById('pontuacaoJog2').textContent = pontuacoes['O'].pontuacao
+            document.getElementById('derrotaJog2').textContent = pontuacoes['O'].derrotas
+        }
+        this.atualizarPlacarGeral()
+    }
+}
