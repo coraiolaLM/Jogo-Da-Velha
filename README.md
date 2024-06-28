@@ -29,5 +29,6 @@
 Palheta De Cores:![paleta](https://github.com/coraiolaLM/Jogo-Da-Velha/assets/142634278/4a59efbd-52ef-4bac-8207-1d95313d2443)
 
 
-Equipe reunida![Captura de tela 2024-06-27 212547](https://github.com/coraiolaLM/Jogo-Da-Velha/assets/142634278/42a39477-9c94-4db1-a3f3-69182752938e)
+Equipe reunida: ![Captura de tela 2024-06-27 215322](https://github.com/coraiolaLM/Jogo-Da-Velha/assets/142634278/8b8de955-3074-4877-b61a-e1496b3cdb15)
+
 
