@@ -26,5 +26,7 @@
 ### [ ] Criação da máquina, problema em criar uma máquina com dificuldade justa, nosso objetivo se trata de um jogo em que não se é possível ganhar todas as vezes.
 #### -Nossa máquina se tornou mais difícil, ela calcula as posições ocupadas e procura uma posição de possível vitória sempre.
 
-![Equipe reunida](![Captura de tela 2024-06-27 212547](https://github.com/coraiolaLM/Jogo-Da-Velha/assets/142634278/42a39477-9c94-4db1-a3f3-69182752938e)
-)
+Palheta De Cores:(![Imagem do WhatsApp de 2024-06-27 à(s) 09 50 37_0f0ee9b2](https://github.com/coraiolaLM/Jogo-Da-Velha/assets/142634278/ffd89358-c7ac-43a7-8866-05a8da51e23c)
+
+Equipe reunida(![Captura de tela 2024-06-27 212547](https://github.com/coraiolaLM/Jogo-Da-Velha/assets/142634278/42a39477-9c94-4db1-a3f3-69182752938e)
+
