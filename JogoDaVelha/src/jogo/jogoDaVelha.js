@@ -1,3 +1,4 @@
+
 class JogoDaVelha {
     constructor() {
         this.jogadorAtual = 'X'
@@ -56,7 +57,8 @@ class JogoDaVelha {
                 }
             })
         })
-
+    }
+/*Gabriel*/ 
     iniciarMaquina() {
         this.jogadorMaquina = true
         this.reniciarJogo()
@@ -73,7 +75,7 @@ class JogoDaVelha {
     realizarJogada(indice) {
         this.tabuleiro.quadradosAtualizados(indice, this.jogadorAtual)
         if (this.verificaVitoria()) {
-            this.finalizarJogo(${this.jogadores[this.jogadorAtual].nome} venceu!)
+            this.finalizarJogo(`${this.jogadores[this.jogadorAtual].nome} venceu!`)
         } else if (this.tabuleiro.quadradosDisponiveis().length === 0) {
             this.finalizarJogo('Empate!')
         } else {
@@ -113,11 +115,12 @@ class JogoDaVelha {
         const outroJogador = this.jogadorAtual === 'X' ? 'O' : 'X'
         this.jogadores[outroJogador].derrotas = (this.jogadores[outroJogador].derrotas || 0) + 1
     
-        document.getElementById(pontuacaoJog${this.jogadorAtual === 'X' ? 1 : 2}).textContent = this.jogadores[this.jogadorAtual].pontuacao
-        document.getElementById(derrotaJog${this.jogadorAtual === 'O' ? 1 : 2}).textContent = this.jogadores[outroJogador].derrotas
+        document.getElementById(`pontuacaoJog${this.jogadorAtual === 'X' ? 1 : 2}`).textContent = this.jogadores[this.jogadorAtual].pontuacao
+        document.getElementById(`derrotaJog${this.jogadorAtual === 'O' ? 1 : 2}`).textContent = this.jogadores[outroJogador].derrotas
     
-        this.salvarPontuacoes()}
-}
+        this.salvarPontuacoes()
+    }
+   /*Rafael*/ 
     salvarPontuacoes() {
         const pontuacoes = {
             'X': {
@@ -156,4 +159,4 @@ class JogoDaVelha {
         }
         this.atualizarPlacarGeral()
     }
-}
+}    
